@@ -1,0 +1,34 @@
+<style >
+.Main{
+    font-size: 18px;
+}
+</style>
+<template>
+    <div class="Main">
+        <nav-comp @active_menu="pageSection"></nav-comp>
+        <home-page v-if="menu_active[0]"></home-page>
+        <about-page v-if="menu_active[1]"></about-page>
+        <contactanos-page v-if="menu_active[2]"></contactanos-page>
+        <servicios-page v-if="menu_active[3]"></servicios-page>
+        <footer-comp></footer-comp>
+    </div>
+</template>
+
+<script>
+    export default {
+        data(){
+            return{
+                menu_active: [true, false, false, false]
+            }
+        },
+        mounted() {
+            console.log('slider montado.')
+        },
+        methods:{
+                pageSection(index){
+                    this.menu_active = [false, false, false, false];
+                    this.menu_active[index] = true; 
+                }
+        }
+    }
+</script>
