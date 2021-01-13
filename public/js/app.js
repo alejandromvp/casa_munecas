@@ -2090,6 +2090,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2416,12 +2419,52 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
-    $('#exampleModalCenter').on('shown.bs.modal', function () {
-      $('#hola').trigger('focus');
-    });
+  },
+  methods: {
+    Modal_serv_casas: function Modal_serv_casas(_categoria, _index) {
+      $('#modelos_casas').modal('show');
+    },
+    Modal_serv_terrazas: function Modal_serv_terrazas(_categoria, _index) {
+      $('#modelos_terrazas').modal('show');
+    }
   }
 });
 
@@ -7215,7 +7258,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.container-fluid{\n        width: 80%;\n}\n.title{\n  color:  #682c0e;\n  font-weight:900;\n  font-size: 22px;\n  font-family:euro-bold ;\n}\n.descripcion{\n  color:white;\n  font-family:euro-bold;\n  font-weight:600;\n}\n.card-footer{\n  background-color: #fc8621;\n  text-align: center;\n}\n.card-body{transition: all 0.7s ease-out;}\n.card-footer{transition: all 0.7s ease-out;}\n.title{transition: all 0.7s ease-out;}\n.elevation:hover{\n  transition: all 0.7s ease-out;\n  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);\n  top: -7px;\n  border: 1px solid #cccccc;\n}\n.elevation:hover .card-body{\n  transition: all 0.7s ease-out;\n  background: #c24914;\n}\n.elevation:hover .card-footer{\n  transition: all 0.7s ease-out;\n  background: #c24914;\n}\n.elevation:hover .title{\n  transition: all 0.7s ease-out;\n  color:#FFCA28;\n}\n.linea_titulo {\n  background-color: #c24914;\n  height: 10px;\n  margin-left: 0%;\n  width: 100%;\n}\n.girar {\n    transition: all 2.2s ease-out;\n}\n.girar:hover {\n    transition: all 2.2s ease-out;\n    transform: rotateY(360deg);\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid{\n        width: 80%;\n}\n.title{\n  color:  #682c0e;\n  font-weight:900;\n  font-size: 22px;\n  font-family:euro-bold ;\n}\n.descripcion{\n  color:white;\n  font-family:euro-bold;\n  font-weight:600;\n}\n.card-footer{\n  background-color: #fc8621;\n  text-align: center;\n}\n.card-body{transition: all 0.7s ease-out;}\n.card-footer{transition: all 0.7s ease-out;}\n.title{transition: all 0.7s ease-out;}\n.elevation:hover{\n  transition: all 0.7s ease-out;\n  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);\n  top: -7px;\n  border: 1px solid #cccccc;\n}\n.elevation:hover .card-body{\n  transition: all 0.7s ease-out;\n  background: #c24914;\n}\n.elevation:hover .card-footer{\n  transition: all 0.7s ease-out;\n  background: #c24914;\n}\n.elevation:hover .title{\n  transition: all 0.7s ease-out;\n  color:#FFCA28;\n}\n.linea_titulo {\n  background-color: #c24914;\n  height: 10px;\n  margin-left: 0%;\n  width: 100%;\n}\n.girar {\n    transition: all 2.2s ease-out;\n}\n.girar:hover {\n    transition: all 2.2s ease-out;\n    transform: rotateY(360deg);\n}\n.gray {\n    filter: grayscale(80%);\n}\n", ""]);
 
 // exports
 
@@ -61018,7 +61061,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-sm-4 mb-4" }, [
           _c("div", { staticClass: "card h-100 elevation" }, [
             _c("img", {
-              staticClass: "card-img-top",
+              staticClass: "card-img-top gray",
               attrs: { src: "images/ceo/ale.png", alt: "", height: "400" }
             }),
             _vm._v(" "),
@@ -61226,96 +61269,112 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-lg-8 mb-4 " }, [
-        _c("h3", [_vm._v("Envianos tu mensaje")]),
-        _vm._v(" "),
-        _c(
-          "form",
-          { attrs: { name: "sentMessage", id: "contactForm", novalidate: "" } },
-          [
-            _c("div", { staticClass: "control-group form-group" }, [
-              _c("div", { staticClass: "controls" }, [
-                _c("label", [_vm._v("Nombre completo:")]),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "text",
-                    id: "name",
-                    required: "",
-                    "data-validation-required-message":
-                      "Please enter your name."
-                  }
-                }),
-                _vm._v(" "),
-                _c("p", { staticClass: "help-block" })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "control-group form-group" }, [
-              _c("div", { staticClass: "controls" }, [
-                _c("label", [_vm._v("Numero cecular:")]),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "tel",
-                    id: "phone",
-                    required: "",
-                    "data-validation-required-message":
-                      "Please enter your phone number."
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "control-group form-group" }, [
-              _c("div", { staticClass: "controls" }, [
-                _c("label", [_vm._v("Email:")]),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "email",
-                    id: "email",
-                    required: "",
-                    "data-validation-required-message":
-                      "Please enter your email address."
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "control-group form-group" }, [
-              _c("div", { staticClass: "controls" }, [
-                _c("label", [_vm._v("Mensaje:")]),
-                _vm._v(" "),
-                _c("textarea", {
-                  staticClass: "form-control",
-                  staticStyle: { resize: "none" },
-                  attrs: {
-                    rows: "10",
-                    cols: "100",
-                    id: "message",
-                    required: "",
-                    "data-validation-required-message":
-                      "Please enter your message",
-                    maxlength: "999"
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "success" } }),
-            _vm._v(" "),
-            _c("a", { staticClass: "btn btn-primary", attrs: { href: "#" } }, [
-              _vm._v("Enviar mensaje")
-            ])
-          ]
-        )
-      ])
-    ])
+    return _c(
+      "div",
+      {
+        staticClass: "row mb-4",
+        staticStyle: {
+          "background-color": "#757575",
+          color: "white",
+          "border-radius": "5px",
+          padding: "20px"
+        }
+      },
+      [
+        _c("div", { staticClass: "col-lg-8 mb-4 " }, [
+          _c("h3", [_vm._v("Envianos tu mensaje")]),
+          _vm._v(" "),
+          _c(
+            "form",
+            {
+              attrs: { name: "sentMessage", id: "contactForm", novalidate: "" }
+            },
+            [
+              _c("div", { staticClass: "control-group form-group" }, [
+                _c("div", { staticClass: "controls" }, [
+                  _c("label", [_vm._v("Nombre completo:")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      id: "name",
+                      required: "",
+                      "data-validation-required-message":
+                        "Please enter your name."
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "help-block" })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "control-group form-group" }, [
+                _c("div", { staticClass: "controls" }, [
+                  _c("label", [_vm._v("Numero cecular:")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "tel",
+                      id: "phone",
+                      required: "",
+                      "data-validation-required-message":
+                        "Please enter your phone number."
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "control-group form-group" }, [
+                _c("div", { staticClass: "controls" }, [
+                  _c("label", [_vm._v("Email:")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "email",
+                      id: "email",
+                      required: "",
+                      "data-validation-required-message":
+                        "Please enter your email address."
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "control-group form-group" }, [
+                _c("div", { staticClass: "controls" }, [
+                  _c("label", [_vm._v("Mensaje:")]),
+                  _vm._v(" "),
+                  _c("textarea", {
+                    staticClass: "form-control",
+                    staticStyle: { resize: "none" },
+                    attrs: {
+                      rows: "10",
+                      cols: "100",
+                      id: "message",
+                      required: "",
+                      "data-validation-required-message":
+                        "Please enter your message",
+                      maxlength: "999"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { attrs: { id: "success" } }),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "btn btn-primary", attrs: { href: "#" } },
+                [_vm._v("Enviar mensaje")]
+              )
+            ]
+          )
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -61371,206 +61430,307 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "container-fluid" },
+    [
+      _c("b-button", { attrs: { type: "is-primary" } }, [_vm._v("Primary")]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "row mb-3" }, [
+        _c(
+          "div",
+          {
+            staticClass: "col-md-6 col-sm-12",
+            on: {
+              click: function($event) {
+                return _vm.Modal_serv_terrazas()
+              }
+            }
+          },
+          [_vm._m(1)]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "col-md-6 col-sm-12",
+            on: {
+              click: function($event) {
+                return _vm.Modal_serv_casas()
+              }
+            }
+          },
+          [_vm._m(2)]
+        )
+      ]),
+      _vm._v(" "),
+      _vm._m(3),
+      _vm._v(" "),
+      _vm._m(4)
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container-fluid" }, [
-      _c(
-        "div",
-        {
-          staticClass: "row d-flex flex-row align-items-center mt-2 mb-2",
-          staticStyle: { "background-color": "#F8FAFC" }
-        },
-        [
-          _c("div", { staticClass: "col-md-12" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-4 col-sm-12" }, [
-                _c("hr", { staticClass: "linea_titulo" })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-4 col-sm-12" }, [
-                _c(
-                  "h2",
-                  {
-                    staticClass: "gold-on-gold",
-                    staticStyle: {
-                      color: "#c24914",
-                      "text-align": "center",
-                      "margin-top": "1rem"
-                    }
-                  },
-                  [_vm._v("Servicios")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-4 col-sm-12" }, [
-                _c("hr", { staticClass: "linea_titulo" })
-              ])
+    return _c(
+      "div",
+      {
+        staticClass: "row d-flex flex-row align-items-center mt-2 mb-2",
+        staticStyle: { "background-color": "#F8FAFC" }
+      },
+      [
+        _c("div", { staticClass: "col-md-12" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-4 col-sm-12" }, [
+              _c("hr", { staticClass: "linea_titulo" })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4 col-sm-12" }, [
+              _c(
+                "h2",
+                {
+                  staticClass: "gold-on-gold",
+                  staticStyle: {
+                    color: "#c24914",
+                    "text-align": "center",
+                    "margin-top": "1rem"
+                  }
+                },
+                [_vm._v("Servicios")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4 col-sm-12" }, [
+              _c("hr", { staticClass: "linea_titulo" })
             ])
           ])
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "row mb-3" }, [
-        _c("div", { staticClass: "col-md-6 col-sm-12" }, [
-          _c("div", { staticClass: "jumbotron jumbotron-fluid" }, [
-            _c(
-              "div",
-              {
-                staticClass: "container",
-                staticStyle: { "min-height": "350px" }
-              },
-              [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-primary",
-                    attrs: {
-                      type: "button",
-                      "data-toggle": "modal",
-                      "data-target": "#exampleModalCenter"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\n                    Launch demo modal\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("p", { staticClass: "lead" }, [
-                  _vm._v(
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In necessitatibus, atque aperiam omnis eos ab!"
-                  )
-                ])
-              ]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-6 col-sm-12" }, [
-          _c("div", { staticClass: "jumbotron jumbotron-fluid" }, [
-            _c(
-              "div",
-              {
-                staticClass: "container",
-                staticStyle: { "min-height": "350px" }
-              },
-              [
-                _c(
-                  "h1",
-                  {
-                    staticClass: "display-1",
-                    staticStyle: { "font-size": "6vw" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          id: "hola",
-                          "data-toggle": "modal",
-                          "data-target": "#exampleModalCenter"
-                        }
-                      },
-                      [_vm._v("Terrazas")]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("p", { staticClass: "lead" }, [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iusto aut voluptate nihil eum doloribus."
-                  )
-                ])
-              ]
-            )
-          ])
         ])
-      ]),
-      _vm._v(" "),
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "jumbotron jumbotron-fluid" }, [
       _c(
         "div",
-        {
-          staticClass: "modal hide fade in",
-          attrs: {
-            id: "exampleModalCenter",
-            tabindex: "-1",
-            role: "dialog",
-            "aria-labelledby": "exampleModalCenterTitle",
-            "aria-hidden": "true"
-          }
-        },
+        { staticClass: "container", staticStyle: { "min-height": "350px" } },
         [
           _c(
-            "div",
-            {
-              staticClass: "modal-dialog modal-dialog-centered",
-              attrs: { role: "document" }
-            },
-            [
-              _c("div", { staticClass: "modal-content" }, [
-                _c("div", { staticClass: "modal-header" }, [
-                  _c(
-                    "h5",
-                    {
-                      staticClass: "modal-title",
-                      attrs: { id: "exampleModalLongTitle" }
-                    },
-                    [_vm._v("Modal title")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "close",
-                      attrs: {
-                        type: "button",
-                        "data-dismiss": "modal",
-                        "aria-label": "Close"
-                      }
-                    },
-                    [
-                      _c("span", { attrs: { "aria-hidden": "true" } }, [
-                        _vm._v("×")
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-body" }, [
-                  _vm._v("\n                    ...\n                ")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-footer" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-secondary",
-                      attrs: { type: "button", "data-dismiss": "modal" }
-                    },
-                    [_vm._v("Close")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-primary",
-                      attrs: { type: "button" }
-                    },
-                    [_vm._v("Save changes")]
-                  )
-                ])
-              ])
-            ]
-          )
+            "h1",
+            { staticClass: "display-1", staticStyle: { "font-size": "6vw" } },
+            [_vm._v("Terrazas")]
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "lead" }, [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iusto aut voluptate nihil eum doloribus."
+            )
+          ])
         ]
       )
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "jumbotron jumbotron-fluid" }, [
+      _c(
+        "div",
+        { staticClass: "container", staticStyle: { "min-height": "350px" } },
+        [
+          _c(
+            "h1",
+            { staticClass: "display-1", staticStyle: { "font-size": "6vw" } },
+            [_vm._v("Casas de muñecas")]
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "lead" }, [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iusto aut voluptate nihil eum doloribus."
+            )
+          ])
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        staticStyle: { "z-index": "10000000" },
+        attrs: {
+          id: "modelos_casas",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "addNewLabel",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "modal-dialog modal-dialog-centered modal-lg",
+            attrs: { role: "document" }
+          },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c(
+                  "h5",
+                  {
+                    staticClass: "modal-title",
+                    attrs: { id: "exampleModalLongTitle" }
+                  },
+                  [_vm._v("Diseños de casas")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: {
+                      type: "button",
+                      "data-dismiss": "modal",
+                      "aria-label": "Close"
+                    }
+                  },
+                  [
+                    _c("span", { attrs: { "aria-hidden": "true" } }, [
+                      _vm._v("×")
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "container-fluid" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "images/servicios/casas/casa-1.png",
+                          alt: "",
+                          width: "200"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 ml-auto" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "images/servicios/casas/casa-1.png",
+                          alt: "",
+                          width: "200"
+                        }
+                      })
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        staticStyle: { "z-index": "10000000" },
+        attrs: {
+          id: "modelos_terrazas",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "addNewLabel",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "modal-dialog modal-dialog-centered modal-lg",
+            attrs: { role: "document" }
+          },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c(
+                  "h5",
+                  {
+                    staticClass: "modal-title",
+                    attrs: { id: "exampleModalLongTitle" }
+                  },
+                  [_vm._v("Diseños terrazas")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: {
+                      type: "button",
+                      "data-dismiss": "modal",
+                      "aria-label": "Close"
+                    }
+                  },
+                  [
+                    _c("span", { attrs: { "aria-hidden": "true" } }, [
+                      _vm._v("×")
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "container-fluid" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "images/servicios/terrazas/1.png",
+                          alt: "",
+                          width: "200"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 ml-auto" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "images/servicios/terrazas/1.png",
+                          alt: "",
+                          width: "200"
+                        }
+                      })
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -62128,7 +62288,7 @@ var staticRenderFns = [
                 {
                   staticClass: "carousel-item",
                   staticStyle: {
-                    "background-image": "url('images/slider/2.jpg')"
+                    "background-image": "url('images/slider/5.png')"
                   }
                 },
                 [
@@ -62151,7 +62311,7 @@ var staticRenderFns = [
                 {
                   staticClass: "carousel-item",
                   staticStyle: {
-                    "background-image": "url('http://placehold.it/1900x1080')"
+                    "background-image": "url('images/slider/6.png')"
                   }
                 },
                 [
@@ -79206,8 +79366,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
+ //import Buefy from 'buefy'
+//import 'buefy/dist/buefy.css'
 
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); //Vue.use(moment);
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); //Vue.use(Buefy);
 
 Vue.component('container', __webpack_require__(/*! ./components/main_component.vue */ "./resources/js/components/main_component.vue")["default"]);
 Vue.component('nav-comp', __webpack_require__(/*! ./components/secciones/nav.vue */ "./resources/js/components/secciones/nav.vue")["default"]);

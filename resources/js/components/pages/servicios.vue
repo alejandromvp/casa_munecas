@@ -49,6 +49,7 @@ width: 100%;
 </style>
 <template>
     <div class="container-fluid">
+        <b-button type="is-primary">Primary</b-button>
         <div class="row d-flex flex-row align-items-center mt-2 mb-2" style="background-color: #F8FAFC;">
             <div class="col-md-12">
                 <div class="row">
@@ -65,46 +66,80 @@ width: 100%;
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12" v-on:click="Modal_serv_terrazas()">
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container" style="min-height:350px;">
                         <!-- <h1 class="display-1" style="font-size:6vw;">Casa de muñecas</h1> -->
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                        Launch demo modal
-                        </button>
-                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In necessitatibus, atque aperiam omnis eos ab!</p>
+                        <h1 class="display-1" style="font-size:6vw;">Terrazas</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iusto aut voluptate nihil eum doloribus.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12" v-on:click="Modal_serv_casas()">
                <div class="jumbotron jumbotron-fluid">
                   <div class="container" style="min-height:350px;">
-                        <h1 class="display-1" style="font-size:6vw;">
-                            <a id="hola" data-toggle="modal" data-target="#exampleModalCenter">Terrazas</a>
-                        </h1>
+                        <h1 class="display-1" style="font-size:6vw;">Casas de muñecas</h1>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iusto aut voluptate nihil eum doloribus.</p>
                   </div>
                </div>
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal hide fade in" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal fade" id="modelos_casas" tabindex="-1" role="dialog" aria-labelledby="addNewLabel" aria-hidden="true" style="z-index:10000000;">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Diseños de casas</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="images/servicios/casas/casa-1.png" alt="" width="200">
+                                </div>
+                                <div class="col-md-6 ml-auto">
+                                    <img src="images/servicios/casas/casa-1.png" alt="" width="200">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
+                    <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+                </div>
+            </div>
+        </div> <!-- cierre modal -->
+         <!-- Modal -->
+        <div class="modal fade" id="modelos_terrazas" tabindex="-1" role="dialog" aria-labelledby="addNewLabel" aria-hidden="true" style="z-index:10000000;">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Diseños terrazas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="images/servicios/terrazas/1.png" alt="" width="200">
+                                </div>
+                                <div class="col-md-6 ml-auto">
+                                    <img src="images/servicios/terrazas/1.png" alt="" width="200">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
                 </div>
             </div>
         </div> <!-- cierre modal -->
@@ -115,9 +150,16 @@ width: 100%;
     export default {
         mounted() {
             console.log('Component mounted.');
-            $('#exampleModalCenter').on('shown.bs.modal', function () {
-                $('#hola').trigger('focus')
-                })
+        },
+        methods: {
+            Modal_serv_casas(_categoria, _index){
+            $('#modelos_casas').modal('show');
+                
+            },
+            Modal_serv_terrazas(_categoria, _index){
+            $('#modelos_terrazas').modal('show');
+                
+            },
         }
     }
 </script>

@@ -89,7 +89,7 @@ width: 100%;
     <!-- /.row -->
     <!-- Contact Form -->
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <div class="row">
+    <div class="row mb-4" style="background-color: #757575;color:white;border-radius:5px;padding:20px;">
       <div class="col-lg-8 mb-4 ">
         <h3>Envianos tu mensaje</h3>
         <form name="sentMessage" id="contactForm" novalidate>

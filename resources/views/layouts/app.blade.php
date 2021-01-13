@@ -35,7 +35,7 @@
                 height: 100vh;
                 width: 100%;
                 position: fixed;
-                z-index: 98;
+                /* z-index: 98; */
             }
             .contenedor{
                 width:100%;
@@ -43,8 +43,8 @@
                 margin-right:auto;
                 position:relative;
                 /* margin:0px 20px 0px 20px; */
-                opacity:.99;
-                z-index:99;
+                /* opacity:.99; */
+                /* z-index:99; */
                 background-position:center;
             }
     </style>

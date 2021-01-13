@@ -2,9 +2,11 @@
 require('./bootstrap');
 import VueMoment from 'vue-moment';
 import moment from 'moment';
+//import Buefy from 'buefy'
+//import 'buefy/dist/buefy.css'
 
 window.Vue = require('vue');
-//Vue.use(moment);
+//Vue.use(Buefy);
 
 Vue.component('container', require('./components/main_component.vue').default);
 Vue.component('nav-comp', require('./components/secciones/nav.vue').default);

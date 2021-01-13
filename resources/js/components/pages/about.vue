@@ -52,6 +52,9 @@
     transition: all 2.2s ease-out;
     transform: rotateY(360deg);
 }
+.gray {
+    filter: grayscale(80%);
+}
 </style>
 
 <template>
@@ -107,7 +110,7 @@
             </div>
             <div class="col-sm-4 mb-4">
                 <div class="card h-100 elevation">
-                <img class="card-img-top" src="images/ceo/ale.png" alt="" height="400">
+                <img class="card-img-top gray" src="images/ceo/ale.png" alt="" height="400">
                 <div class="card-body color3">
                     <h4 class="card-title title">Alejandro Villagran</h4>
                     <h6 class="card-subtitle mb-2 text-dark">Web Developer</h6>
