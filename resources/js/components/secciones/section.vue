@@ -111,7 +111,7 @@
           <a href="#"><img class="card-img-top" src="images/terraza.jfif" alt="" height="400" width="700"></a>
           <div class="card-body color3">
             <h4 class="card-title">
-              <a href="#" class="title">Project Four</a>
+              <a href="#" class="title">Reposera</a>
             </h4>
             <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
           </div>
@@ -125,7 +125,7 @@
           <a href="#"><img class="card-img-top" src="images/terraza.jfif" alt="" height="400" width="700"></a>
           <div class="card-body color3">
             <h4 class="card-title">
-              <a href="#" class="title">Project Five</a>
+              <a href="#" class="title">Reposera</a>
             </h4>
             <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
           </div>
@@ -139,7 +139,7 @@
           <a href="#"><img class="card-img-top" src="images/terraza.jfif" alt="" height="400" width="700"></a>
           <div class="card-body color3">
             <h4 class="card-title">
-              <a href="#" class="title">Project Six</a>
+              <a href="#" class="title">Reposera</a>
             </h4>
             <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
           </div>

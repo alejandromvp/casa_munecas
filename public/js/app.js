@@ -62101,7 +62101,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "card-body color3" }, [
                 _c("h4", { staticClass: "card-title" }, [
                   _c("a", { staticClass: "title", attrs: { href: "#" } }, [
-                    _vm._v("Project Four")
+                    _vm._v("Reposera")
                   ])
                 ]),
                 _vm._v(" "),
@@ -62137,7 +62137,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "card-body color3" }, [
                 _c("h4", { staticClass: "card-title" }, [
                   _c("a", { staticClass: "title", attrs: { href: "#" } }, [
-                    _vm._v("Project Five")
+                    _vm._v("Reposera")
                   ])
                 ]),
                 _vm._v(" "),
@@ -62173,7 +62173,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "card-body color3" }, [
                 _c("h4", { staticClass: "card-title" }, [
                   _c("a", { staticClass: "title", attrs: { href: "#" } }, [
-                    _vm._v("Project Six")
+                    _vm._v("Reposera")
                   ])
                 ]),
                 _vm._v(" "),
