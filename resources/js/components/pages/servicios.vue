@@ -49,7 +49,6 @@ width: 100%;
 </style>
 <template>
     <div class="container-fluid">
-        <b-button type="is-primary">Primary</b-button>
         <div class="row d-flex flex-row align-items-center mt-2 mb-2" style="background-color: #F8FAFC;">
             <div class="col-md-12">
                 <div class="row">

@@ -2453,7 +2453,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -61430,48 +61429,41 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container-fluid" },
-    [
-      _c("b-button", { attrs: { type: "is-primary" } }, [_vm._v("Primary")]),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div", { staticClass: "row mb-3" }, [
-        _c(
-          "div",
-          {
-            staticClass: "col-md-6 col-sm-12",
-            on: {
-              click: function($event) {
-                return _vm.Modal_serv_terrazas()
-              }
+  return _c("div", { staticClass: "container-fluid" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "row mb-3" }, [
+      _c(
+        "div",
+        {
+          staticClass: "col-md-6 col-sm-12",
+          on: {
+            click: function($event) {
+              return _vm.Modal_serv_terrazas()
             }
-          },
-          [_vm._m(1)]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "col-md-6 col-sm-12",
-            on: {
-              click: function($event) {
-                return _vm.Modal_serv_casas()
-              }
+          }
+        },
+        [_vm._m(1)]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "col-md-6 col-sm-12",
+          on: {
+            click: function($event) {
+              return _vm.Modal_serv_casas()
             }
-          },
-          [_vm._m(2)]
-        )
-      ]),
-      _vm._v(" "),
-      _vm._m(3),
-      _vm._v(" "),
-      _vm._m(4)
-    ],
-    1
-  )
+          }
+        },
+        [_vm._m(2)]
+      )
+    ]),
+    _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
+    _vm._m(4)
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -62273,11 +62265,9 @@ var staticRenderFns = [
                     "div",
                     { staticClass: "carousel-caption d-none d-md-block" },
                     [
-                      _c("h3", [_vm._v("First Slide")]),
+                      _c("h3", [_vm._v("primer slider")]),
                       _vm._v(" "),
-                      _c("p", [
-                        _vm._v("This is a description for the first slide.")
-                      ])
+                      _c("p", [_vm._v("esta es una descripcion del slider")])
                     ]
                   )
                 ]
@@ -62296,11 +62286,9 @@ var staticRenderFns = [
                     "div",
                     { staticClass: "carousel-caption d-none d-md-block" },
                     [
-                      _c("h3", [_vm._v("Second Slide")]),
+                      _c("h3", [_vm._v("segundo slider")]),
                       _vm._v(" "),
-                      _c("p", [
-                        _vm._v("This is a description for the second slide.")
-                      ])
+                      _c("p", [_vm._v("esta es una descripcion del slider")])
                     ]
                   )
                 ]
@@ -62319,11 +62307,9 @@ var staticRenderFns = [
                     "div",
                     { staticClass: "carousel-caption d-none d-md-block" },
                     [
-                      _c("h3", [_vm._v("Third Slide")]),
+                      _c("h3", [_vm._v("tercer slide")]),
                       _vm._v(" "),
-                      _c("p", [
-                        _vm._v("This is a description for the third slide.")
-                      ])
+                      _c("p", [_vm._v("esta es una descripcion del slider")])
                     ]
                   )
                 ]
@@ -62347,7 +62333,7 @@ var staticRenderFns = [
                 attrs: { "aria-hidden": "true" }
               }),
               _vm._v(" "),
-              _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+              _c("span", { staticClass: "sr-only" }, [_vm._v("Anterior")])
             ]
           ),
           _vm._v(" "),
@@ -62367,7 +62353,7 @@ var staticRenderFns = [
                 attrs: { "aria-hidden": "true" }
               }),
               _vm._v(" "),
-              _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+              _c("span", { staticClass: "sr-only" }, [_vm._v("Siguiente")])
             ]
           )
         ]
