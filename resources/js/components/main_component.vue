@@ -7,9 +7,9 @@
     <div class="Main">
         <nav-comp @active_menu="pageSection"></nav-comp>
         <home-page v-if="menu_active[0]"></home-page>
-        <about-page v-if="menu_active[1]"></about-page>
-        <contactanos-page v-if="menu_active[2]"></contactanos-page>
-        <servicios-page v-if="menu_active[3]"></servicios-page>
+        <servicios-page v-if="menu_active[1]"></servicios-page>
+        <about-page v-if="menu_active[2]"></about-page>
+        <contactanos-page v-if="menu_active[3]"></contactanos-page>
         <footer-comp></footer-comp>
     </div>
 </template>

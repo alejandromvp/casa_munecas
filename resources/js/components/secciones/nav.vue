@@ -16,12 +16,20 @@ nav ul li a{
   transition: all 0.2s ease-out;
   font-size: 17px;
 }
+.agrandar {
+    transition: all 1s ease-out;
+}
+.agrandar:hover {
+    transition: all 1s ease-out;
+    /* transform: rotate(360deg); */
+    transform:scale(1.25);
+}
 </style>
 <template>
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top color1">
     <div class="container">
-      <a class="navbar-brand" href="index.html" style="color: #fc8621;">Abi Shop</a>
+      <a class="navbar-brand agrandar" href="index.html" style="color: #fc8621;font-size:20px;">Abi Shop</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" ></span>
       </button>
@@ -60,16 +68,15 @@ nav ul li a{
             onClick_home(){
                 this.class_active = ['active','', '', ''];
                 this.$emit('active_menu', 0);
-                console.log("holaaaaaaaa")
             },
             onClick_about(){
                 this.class_active = ['','active', '',''];
-                this.$emit('active_menu', 1);
+                this.$emit('active_menu', 2);
                 console.log("perro");
             },
             onClick_service(){
                 this.class_active = ['','', 'active', ''];
-                this.$emit('active_menu', 2);
+                this.$emit('active_menu', 1);
             },
             onClick_contactanos(){
                 this.class_active = ['','', '', 'active'];

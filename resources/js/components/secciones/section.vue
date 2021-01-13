@@ -15,23 +15,31 @@
   background-color: #fc8621;
   text-align: center;
 }
+.elevation{
+  transition: all 2s ease-out;
+}
 .elevation:hover{
-  transition: all 0.5s ease-out;
+  transition: all 2s ease-out;
   box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
   top: -7px;
   border: 1px solid #cccccc;
 }
 
+.card-body{
+  transition: all 0.7s ease-out;
+}
+.card-footer{transition: all 0.7s ease-out;}
+.title{transition: all 0.7s ease-out;}
 .elevation:hover .card-body{
-  transition: all 0.5s ease-out;
+  transition: all 0.7s ease-out;
   background: #c24914;
 }
 .elevation:hover .card-footer{
-  transition: all 0.5s ease-out;
+  transition: all 0.7s ease-out;
   background: #c24914;
 }
 .elevation:hover .title{
-  transition: all 0.5s ease-out;
+  transition: all 0.7s ease-out;
   color:#FFCA28;
 }
 .linea_titulo {
