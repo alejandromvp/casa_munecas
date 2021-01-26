@@ -396,9 +396,9 @@ transform: translateY(70px) translateX(180px);
                                 <div></div>
                                 <div></div>
                                 <div></div>
-                                <button type="button" id="close-CSS1" v-on:click="movH_izq"></button>
+                                <input type="button" id="close-CSS1" v-on:click="movH_izq">
                                 <div></div>
-                                <button type="button" id="close-CSS2" v-on:click="movH_right"></button>
+                                <input type="button" id="close-CSS2" v-on:click="movH_right">
                                 <div></div>
                                 <div></div>
                                 <div></div>
