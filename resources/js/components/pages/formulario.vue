@@ -397,9 +397,10 @@ transform: translateY(70px) translateX(180px);
                                 <div></div>
                                 <div></div>
                                 <!-- <input type="button" id="close-CSS1" v-on:click="movH_izq"> -->
-                                <button type="button" class="btn btn-primary" v-on:click="movH_izq">girar izquierda</button>
+                                <input type="button" class="btn btn-primary" v-on:click="movH_izq" value="girar izquierda" style="padding:20px 40px 30px 20px;width:130px;">
                                 <div></div>
-                                <input type="button" id="close-CSS2" v-on:click="movH_right">
+                                <!-- <input type="button" id="close-CSS2" v-on:click="movH_right"> -->
+                                <input type="button" class="btn btn-primary" v-on:click="movH_right" value="girar derecha" style="padding:20px 40px 30px 20px;width:130px;">
                                 <div></div>
                                 <div></div>
                                 <div></div>
