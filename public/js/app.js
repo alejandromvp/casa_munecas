@@ -1929,7 +1929,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      menu_active: [false, false, false, false, true]
+      menu_active: [true, false, false, false, false]
     };
   },
   mounted: function mounted() {
@@ -2277,6 +2277,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -62084,10 +62085,15 @@ var render = function() {
                     _vm._v(" "),
                     _c("div"),
                     _vm._v(" "),
-                    _c("input", {
-                      attrs: { type: "button", id: "close-CSS1" },
-                      on: { click: _vm.movH_izq }
-                    }),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        attrs: { type: "button" },
+                        on: { click: _vm.movH_izq }
+                      },
+                      [_vm._v("girar izquierda")]
+                    ),
                     _vm._v(" "),
                     _c("div"),
                     _vm._v(" "),
