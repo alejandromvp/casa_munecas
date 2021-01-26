@@ -62085,14 +62085,14 @@ var render = function() {
                     _c("div"),
                     _vm._v(" "),
                     _c("button", {
-                      attrs: { id: "close-CSS1" },
+                      attrs: { type: "button", id: "close-CSS1" },
                       on: { click: _vm.movH_izq }
                     }),
                     _vm._v(" "),
                     _c("div"),
                     _vm._v(" "),
                     _c("button", {
-                      attrs: { id: "close-CSS2" },
+                      attrs: { type: "button", id: "close-CSS2" },
                       on: { click: _vm.movH_right }
                     }),
                     _vm._v(" "),
