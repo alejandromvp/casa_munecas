@@ -274,7 +274,19 @@ transform: translateY(70px) translateX(180px);
 .btn_big:hover{
     transition: all 1s ease-out;
     /* transform: rotate(360deg); */
-    transform:scale(1.2);
+    transform:scale(1.1);
+}
+#close-CSS1 {
+    background-image: url( '/images/casa3d/izquierda.png' );
+    background-size: 100px 130px;
+    height: 134px;  
+    width: 104px;
+}
+#close-CSS2{
+    background-image: url( '/images/casa3d/derecha.png' );
+    background-size: 100px 130px;
+    height: 134px;  
+    width: 104px;
 }
 </style>
 <template>
@@ -384,14 +396,14 @@ transform: translateY(70px) translateX(180px);
                                 <div></div>
                                 <div></div>
                                 <div></div>
-                                <img src="images/casa3d/izquierda.png" alt="" width="100px" height="100px" class="btn_big" v-on:click="movH_izq">
+                                <button id="close-CSS1" v-on:click="movH_izq"></button>
                                 <div></div>
-                                <img src="images/casa3d/derecha.png" alt="" width="100px" height="100px" class="btn_big" v-on:click="movH_right">
+                                <button id="close-CSS2" v-on:click="movH_right"></button>
                                 <div></div>
                                 <div></div>
                                 <div></div>
                             </div>
-                            <div>
+                            <div style="margin-top:60px;">
                                 Color Puerta: <v-input-colorpicker  v-model="color"/>
                             </div>
                         </div>

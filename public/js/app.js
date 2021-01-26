@@ -1929,7 +1929,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      menu_active: [true, false, false, false, false]
+      menu_active: [false, false, false, false, true]
     };
   },
   mounted: function mounted() {
@@ -1937,7 +1937,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     pageSection: function pageSection(index) {
-      this.menu_active = [false, false, false, false], false;
+      this.menu_active = [false, false, false, false, false];
       this.menu_active[index] = true;
     }
   }
@@ -2277,6 +2277,18 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7805,7 +7817,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.container_section_hause{\r\n    background: #e9b0df;\r\n    min-height: 600px;\n}\n.contenedor_casa{\r\n    height: 300px;\r\n    width: 300px;\r\n    perspective: 1000px;\r\n    /* transform-origin:2000px; */\r\n    /* margin: 100px -200px; */\r\n    margin: 0 0 60px 0;\r\n    transform: scale(.8);\n}\n.cont-hijo{\r\n    height: 100%;\r\n    width: 100%;\r\n    transform-style: preserve-3d;\r\n    transform: rotateY(90deg);\r\n    transition: 0.1s;\r\n      /* animation: rotar 30s infinite linear; */\n}\n.lado{\r\n    position: absolute;\r\n    height: 100%;\r\n    width: 100%;\n}\n.frente{\r\n    transform:rotateY(0deg) translateZ(150px);\r\n    -webkit-clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n            clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n    /* background-color: #5899C1; */\r\n    display: flex;\r\n    flex-direction: column;\n}\n.atras{\r\n    transform:rotateY(180deg) translateZ(150px);\r\n    -webkit-clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n            clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n    background-color: #5899C1;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\n}\n.atras h1{\r\n    font-family: sans-serif;\r\n    font-weight: bold;\r\n    font-size: 3em;\n}\n.derecha{\r\n    transform:rotateY(-90deg) translateY(115px) translateZ(150px);\r\n    height: 185px;\r\n    background-color: #5899C1;\r\n   /* display: flex;\r\n    justify-content: space-around;;*/\n}\n.izquierdo{\r\n    transform:rotateY(90deg) translateY(115px) translateZ(150px);\r\n     height: 185px;\r\n    background-color: #5899C1;\n}\n.arriba{\r\n    transform:rotateX(90deg) translateZ(150px);\r\n   /* background-color: aqua;*/\r\n    transform-style: preserve-3d;\n}\n.abajo{\r\n     transform:rotateX(-90deg) translateY(-50px) translateX(-45px)translateZ(50px);\r\n    background-color: limegreen;\r\n    width: 400px;\r\n    height: 500px;\r\n    transform-style: preserve-3d;\n}\n.abajo img{\r\n    transform:translateY(-50px) translateZ(-70px) rotateX(90deg);\r\n    height: 200px;\n}\n.techo{\r\n    height: 110%;\r\n    background-color: #111;\r\n    position: absolute;\n}\n:root{\r\n    --ancho:20em;\n}\n.t1{\r\n    transform-origin: right;\r\n    transform: rotateY(-37deg) translateX(-80px)translateZ(60px);\r\n    width:250px;\r\n    background-image: url('/public/images/techo.png');\r\n    background-color: #cccccc;\n}\n.t2{\r\n    transform-origin: ;\r\n    transform: rotateY(37deg) translateX(145px) translateZ(15px);\r\n    width:250px;   \r\n    background-color: #cccccc;\n}\n.ventanas-arriba{\r\n    width: 60%;\r\n    margin: auto;\r\n    /*border: 2px solid #111;*/\r\n    transform: translateY(50px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.ventanas-arriba .ventana{\r\n    float: left;\n}\n.ventanas-arriba .ventana:nth-child(2){\n}\n.ventanas-arriba2{\r\n    /* width: 60%; */\r\n    margin: auto;\r\n    /*border: 2px solid #111;*/\r\n    transform: translateY(50px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.ventanas-arriba2 .ventana-circular{\r\n    float: left;\n}\n.ventanas-arriba2 .ventana-circular:nth-child(2){\n}\n.box-puerta{\r\n    height: 100px;\r\n    margin: auto;\r\n    width: 70%;\r\n    transform: translateY(15px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.puerta{\r\n    height: 120px;\r\n    width: 80px;\r\n    border: 1px solid #fff;\r\n    /*transform: translateY(200px) translateX(50px);*/\r\n    background-color: #DD37CA;\r\n    display: flex;\r\n    /* justify-content: center;\r\n    flex-wrap: wrap; */\r\n    align-items: center;\r\n    box-shadow: inset 0 0 3px #CF9355\n}\n.puerta .cajas{\r\n    box-shadow: 0 0 3px #fff;\r\n    height: 17px;\r\n    width: 15px;\r\n    margin: 1px;\r\n    background-color: #CF9355;\n}\n.ventana-circular{\r\n    height:46px;\r\n    width: 46px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 50%;\n}\n.ventana-circular .lunas1{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 100% 0 0 0;\r\n    \r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas2{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 0 100% 0 0;\r\n    margin-left: 2px;\r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas3{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 0 0 0 100%;\r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas4{\r\n    border: 1px solid #fff;\r\n    height:19px;\r\n    width: 19px;\r\n    margin-left: 2px;\r\n    border-radius: 0 0 100% 0;\r\n    background-color: #76ACC6;\n}\n.ventana{\r\n    height: 70px;\r\n    width: 50px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 2px;\n}\n.ventana_frente{\r\n    height: 70px;\r\n    width: 70px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 2px;\n}\n.ventana_frente .lunas{\r\n    background-color: #76ACC6;\r\n    height: 32px;\r\n    width: 32px;\r\n    border: 1px solid #fff;\n}\n.ventana .lunas{\r\n    border: 1px solid #fff;\r\n    height: 22px;\r\n    width: 22px;\r\n    background-color: #76ACC6;\n}\n.derecha .ventana{ \r\ntransform: translateY(70px) translateX(180px);\r\n    float: left;\n}\n.derecha .ventana:nth-child(2){\r\n    margin-left: -11em;\n}\n.izquierdo .ventana{ \r\ntransform: translateY(70px) translateX(180px);\r\n    float: left;\n}\n.izquierdo .ventana:nth-child(2){\r\n    margin-left: -11em;\n}\n@-webkit-keyframes rotar{\n100%{\r\n        transform:rotateY(360deg)\n}\n}\n@keyframes rotar{\n100%{\r\n        transform:rotateY(360deg)\n}\n}\n.botones{\r\n    display: grid;\r\n    width: 300px;\r\n    grid-template-columns: 33% 33% 33%;\r\n    grid-template-rows: 33% 33% 33%;\n}\n.btn_big{\r\n    transition: all 1s ease-out;\n}\n.btn_big:hover{\r\n    transition: all 1s ease-out;\r\n    /* transform: rotate(360deg); */\r\n    transform:scale(1.2);\n}\r\n", ""]);
+exports.push([module.i, "\n.container_section_hause{\r\n    background: #e9b0df;\r\n    min-height: 600px;\n}\n.contenedor_casa{\r\n    height: 300px;\r\n    width: 300px;\r\n    perspective: 1000px;\r\n    /* transform-origin:2000px; */\r\n    /* margin: 100px -200px; */\r\n    margin: 0 0 60px 0;\r\n    transform: scale(.8);\n}\n.cont-hijo{\r\n    height: 100%;\r\n    width: 100%;\r\n    transform-style: preserve-3d;\r\n    transform: rotateY(90deg);\r\n    transition: 0.1s;\r\n      /* animation: rotar 30s infinite linear; */\n}\n.lado{\r\n    position: absolute;\r\n    height: 100%;\r\n    width: 100%;\n}\n.frente{\r\n    transform:rotateY(0deg) translateZ(150px);\r\n    -webkit-clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n            clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n    /* background-color: #5899C1; */\r\n    display: flex;\r\n    flex-direction: column;\n}\n.atras{\r\n    transform:rotateY(180deg) translateZ(150px);\r\n    -webkit-clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n            clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n    background-color: #5899C1;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\n}\n.atras h1{\r\n    font-family: sans-serif;\r\n    font-weight: bold;\r\n    font-size: 3em;\n}\n.derecha{\r\n    transform:rotateY(-90deg) translateY(115px) translateZ(150px);\r\n    height: 185px;\r\n    background-color: #5899C1;\r\n   /* display: flex;\r\n    justify-content: space-around;;*/\n}\n.izquierdo{\r\n    transform:rotateY(90deg) translateY(115px) translateZ(150px);\r\n     height: 185px;\r\n    background-color: #5899C1;\n}\n.arriba{\r\n    transform:rotateX(90deg) translateZ(150px);\r\n   /* background-color: aqua;*/\r\n    transform-style: preserve-3d;\n}\n.abajo{\r\n     transform:rotateX(-90deg) translateY(-50px) translateX(-45px)translateZ(50px);\r\n    background-color: limegreen;\r\n    width: 400px;\r\n    height: 500px;\r\n    transform-style: preserve-3d;\n}\n.abajo img{\r\n    transform:translateY(-50px) translateZ(-70px) rotateX(90deg);\r\n    height: 200px;\n}\n.techo{\r\n    height: 110%;\r\n    background-color: #111;\r\n    position: absolute;\n}\n:root{\r\n    --ancho:20em;\n}\n.t1{\r\n    transform-origin: right;\r\n    transform: rotateY(-37deg) translateX(-80px)translateZ(60px);\r\n    width:250px;\r\n    background-image: url('/public/images/techo.png');\r\n    background-color: #cccccc;\n}\n.t2{\r\n    transform-origin: ;\r\n    transform: rotateY(37deg) translateX(145px) translateZ(15px);\r\n    width:250px;   \r\n    background-color: #cccccc;\n}\n.ventanas-arriba{\r\n    width: 60%;\r\n    margin: auto;\r\n    /*border: 2px solid #111;*/\r\n    transform: translateY(50px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.ventanas-arriba .ventana{\r\n    float: left;\n}\n.ventanas-arriba .ventana:nth-child(2){\n}\n.ventanas-arriba2{\r\n    /* width: 60%; */\r\n    margin: auto;\r\n    /*border: 2px solid #111;*/\r\n    transform: translateY(50px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.ventanas-arriba2 .ventana-circular{\r\n    float: left;\n}\n.ventanas-arriba2 .ventana-circular:nth-child(2){\n}\n.box-puerta{\r\n    height: 100px;\r\n    margin: auto;\r\n    width: 70%;\r\n    transform: translateY(15px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.puerta{\r\n    height: 120px;\r\n    width: 80px;\r\n    border: 1px solid #fff;\r\n    /*transform: translateY(200px) translateX(50px);*/\r\n    background-color: #DD37CA;\r\n    display: flex;\r\n    /* justify-content: center;\r\n    flex-wrap: wrap; */\r\n    align-items: center;\r\n    box-shadow: inset 0 0 3px #CF9355\n}\n.puerta .cajas{\r\n    box-shadow: 0 0 3px #fff;\r\n    height: 17px;\r\n    width: 15px;\r\n    margin: 1px;\r\n    background-color: #CF9355;\n}\n.ventana-circular{\r\n    height:46px;\r\n    width: 46px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 50%;\n}\n.ventana-circular .lunas1{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 100% 0 0 0;\r\n    \r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas2{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 0 100% 0 0;\r\n    margin-left: 2px;\r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas3{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 0 0 0 100%;\r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas4{\r\n    border: 1px solid #fff;\r\n    height:19px;\r\n    width: 19px;\r\n    margin-left: 2px;\r\n    border-radius: 0 0 100% 0;\r\n    background-color: #76ACC6;\n}\n.ventana{\r\n    height: 70px;\r\n    width: 50px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 2px;\n}\n.ventana_frente{\r\n    height: 70px;\r\n    width: 70px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 2px;\n}\n.ventana_frente .lunas{\r\n    background-color: #76ACC6;\r\n    height: 32px;\r\n    width: 32px;\r\n    border: 1px solid #fff;\n}\n.ventana .lunas{\r\n    border: 1px solid #fff;\r\n    height: 22px;\r\n    width: 22px;\r\n    background-color: #76ACC6;\n}\n.derecha .ventana{ \r\ntransform: translateY(70px) translateX(180px);\r\n    float: left;\n}\n.derecha .ventana:nth-child(2){\r\n    margin-left: -11em;\n}\n.izquierdo .ventana{ \r\ntransform: translateY(70px) translateX(180px);\r\n    float: left;\n}\n.izquierdo .ventana:nth-child(2){\r\n    margin-left: -11em;\n}\n@-webkit-keyframes rotar{\n100%{\r\n        transform:rotateY(360deg)\n}\n}\n@keyframes rotar{\n100%{\r\n        transform:rotateY(360deg)\n}\n}\n.botones{\r\n    display: grid;\r\n    width: 300px;\r\n    grid-template-columns: 33% 33% 33%;\r\n    grid-template-rows: 33% 33% 33%;\n}\n.btn_big{\r\n    transition: all 1s ease-out;\n}\n.btn_big:hover{\r\n    transition: all 1s ease-out;\r\n    /* transform: rotate(360deg); */\r\n    transform:scale(1.1);\n}\n#close-CSS1 {\r\n    background-image: url( '/images/casa3d/izquierda.png' );\r\n    background-size: 100px 130px;\r\n    height: 134px;  \r\n    width: 104px;\n}\n#close-CSS2{\r\n    background-image: url( '/images/casa3d/derecha.png' );\r\n    background-size: 100px 130px;\r\n    height: 134px;  \r\n    width: 104px;\n}\r\n", ""]);
 
 // exports
 
@@ -62072,27 +62084,15 @@ var render = function() {
                     _vm._v(" "),
                     _c("div"),
                     _vm._v(" "),
-                    _c("img", {
-                      staticClass: "btn_big",
-                      attrs: {
-                        src: "images/casa3d/izquierda.png",
-                        alt: "",
-                        width: "100px",
-                        height: "100px"
-                      },
+                    _c("button", {
+                      attrs: { id: "close-CSS1" },
                       on: { click: _vm.movH_izq }
                     }),
                     _vm._v(" "),
                     _c("div"),
                     _vm._v(" "),
-                    _c("img", {
-                      staticClass: "btn_big",
-                      attrs: {
-                        src: "images/casa3d/derecha.png",
-                        alt: "",
-                        width: "100px",
-                        height: "100px"
-                      },
+                    _c("button", {
+                      attrs: { id: "close-CSS2" },
                       on: { click: _vm.movH_right }
                     }),
                     _vm._v(" "),
@@ -62105,6 +62105,7 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
+                    { staticStyle: { "margin-top": "60px" } },
                     [
                       _vm._v("\n                            Color Puerta: "),
                       _c("v-input-colorpicker", {
