@@ -28,6 +28,7 @@
         "@fullcalendar/vue": "^5.5.0",
         "buefy": "^0.9.4",
         "moment": "^2.29.1",
-        "vue-moment": "^4.1.0"
+        "vue-moment": "^4.1.0",
+        "vue-native-color-picker": "^1.1.4"
     }
 }

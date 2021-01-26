@@ -48,6 +48,9 @@ nav ul li a{
           <li class="nav-item">
             <a v-bind:class="['nav-link_', class_active[3]]" href="#" v-on:click="onClick_contactanos()">Contactanos</a>
           </li>
+          <li class="nav-item">
+            <a v-bind:class="['nav-link_', class_active[3]]" href="#" v-on:click="onClick_prueba()">Arma tu casa</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -82,6 +85,9 @@ nav ul li a{
                 this.class_active = ['','', '', 'active'];
                 this.$emit('active_menu', 3);
             },
+            onClick_prueba(){
+                this.$emit('active_menu', 4);
+            }
         }
     }
 </script>
