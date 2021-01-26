@@ -278,15 +278,15 @@ transform: translateY(70px) translateX(180px);
 }
 #close-CSS1 {
     background-image: url( '/images/casa3d/izquierda.png' );
-    background-size: 100px 130px;
-    height: 134px;  
-    width: 104px;
+    background-size: 100px 100px;
+    height: 100px;  
+    width: 100px;
 }
 #close-CSS2{
     background-image: url( '/images/casa3d/derecha.png' );
-    background-size: 100px 130px;
-    height: 134px;  
-    width: 104px;
+    background-size: 100px 100px;
+    height: 100px;  
+    width: 100px;
 }
 </style>
 <template>
