@@ -20,7 +20,7 @@
     export default {
         data(){
             return{
-                menu_active: [false, false, false, false, true]
+                menu_active: [true, false, false, false, false]
             }
         },
         mounted() {

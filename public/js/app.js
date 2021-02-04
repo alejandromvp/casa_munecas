@@ -1929,7 +1929,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      menu_active: [false, false, false, false, true]
+      menu_active: [true, false, false, false, false]
     };
   },
   mounted: function mounted() {
@@ -3119,7 +3119,8 @@ __webpack_require__.r(__webpack_exports__);
       this.class_active = ['', '', '', 'active'];
       this.$emit('active_menu', 3);
     },
-    onClick_prueba: function onClick_prueba() {
+    onClick_armaCasa: function onClick_armaCasa() {
+      this.class_active = ['', '', '', '', 'active'];
       this.$emit('active_menu', 4);
     }
   }
@@ -62859,11 +62860,11 @@ var render = function() {
                 _c(
                   "a",
                   {
-                    class: ["nav-link_", _vm.class_active[3]],
+                    class: ["nav-link_", _vm.class_active[4]],
                     attrs: { href: "#" },
                     on: {
                       click: function($event) {
-                        return _vm.onClick_prueba()
+                        return _vm.onClick_armaCasa()
                       }
                     }
                   },
