@@ -1929,7 +1929,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      menu_active: [true, false, false, false, false]
+      menu_active: [false, false, false, false, true]
     };
   },
   mounted: function mounted() {
@@ -2277,6 +2277,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_range_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-range-slider */ "./node_modules/vue-range-slider/dist/vue-range-slider.cjs.js");
+/* harmony import */ var vue_range_slider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_range_slider__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue_range_slider_dist_vue_range_slider_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-range-slider/dist/vue-range-slider.css */ "./node_modules/vue-range-slider/dist/vue-range-slider.css");
+/* harmony import */ var vue_range_slider_dist_vue_range_slider_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_range_slider_dist_vue_range_slider_css__WEBPACK_IMPORTED_MODULE_1__);
 //
 //
 //
@@ -2695,9 +2699,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+ // you probably need to import built-in style
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
+      sliderValue: 50,
       array_categorias: [],
       editmode: false,
       puerta: 100,
@@ -2706,8 +2738,13 @@ __webpack_require__.r(__webpack_exports__);
       xcasa: 0,
       ycasa: 0,
       error_input_categoria: '',
-      color: "#DD37CA"
+      color: "#DD37CA",
+      color_techo: '#cccccc',
+      ancho_puerta: 80
     };
+  },
+  components: {
+    RangeSlider: vue_range_slider__WEBPACK_IMPORTED_MODULE_0___default.a
   },
   computed: {
     x: {
@@ -7750,6 +7787,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-range-slider/dist/vue-range-slider.css":
+/*!*************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-range-slider/dist/vue-range-slider.css ***!
+  \*************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".range-slider {\n  display: inline-block;\n  padding: 0 10px;\n  height: 20px;\n  width: 130px;\n}\n\n.range-slider.disabled {\n  opacity: 0.5;\n}\n\n.range-slider-inner {\n  display: inline-block;\n  position: relative;\n  height: 100%;\n  width: 100%;\n}\n\n.range-slider-rail,\n.range-slider-fill {\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 0;\n  height: 4px;\n  border-radius: 2px;\n  transform: translateY(-50%);\n}\n\n.range-slider-rail {\n  width: 100%;\n  background-color: #e2e2e2;\n}\n\n.range-slider-fill {\n  background-color: #21fb92;\n}\n\n.range-slider-knob {\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 0;\n  box-sizing: border-box;\n  height: 20px;\n  width: 20px;\n  border: 1px solid #f5f5f5;\n  border-radius: 50%;\n  background-color: #fff;\n  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);\n  transform: translate(-50%, -50%);\n  cursor: pointer;\n}\n\n.range-slider-hidden {\n  display: none;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/main_component.vue?vue&type=style&index=0&lang=css&":
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/main_component.vue?vue&type=style&index=0&lang=css& ***!
@@ -7819,7 +7875,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.container_section_hause{\r\n    background: #e9b0df;\r\n    min-height: 600px;\n}\n.contenedor_casa{\r\n    height: 300px;\r\n    width: 300px;\r\n    perspective: 1000px;\r\n    /* transform-origin:2000px; */\r\n    /* margin: 100px -200px; */\r\n    margin: 0 0 60px 0;\r\n    transform: scale(.8);\n}\n.cont-hijo{\r\n    height: 100%;\r\n    width: 100%;\r\n    transform-style: preserve-3d;\r\n    transform: rotateY(90deg);\r\n    transition: 0.1s;\r\n      /* animation: rotar 30s infinite linear; */\n}\n.lado{\r\n    position: absolute;\r\n    height: 100%;\r\n    width: 100%;\n}\n.frente{\r\n    transform:rotateY(0deg) translateZ(150px);\r\n    -webkit-clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n            clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n    /* background-color: #5899C1; */\r\n    display: flex;\r\n    flex-direction: column;\n}\n.atras{\r\n    transform:rotateY(180deg) translateZ(150px);\r\n    -webkit-clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n            clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n    background-color: #5899C1;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\n}\n.atras h1{\r\n    font-family: sans-serif;\r\n    font-weight: bold;\r\n    font-size: 3em;\n}\n.derecha{\r\n    transform:rotateY(-90deg) translateY(115px) translateZ(150px);\r\n    height: 185px;\r\n    background-color: #5899C1;\r\n   /* display: flex;\r\n    justify-content: space-around;;*/\n}\n.izquierdo{\r\n    transform:rotateY(90deg) translateY(115px) translateZ(150px);\r\n     height: 185px;\r\n    background-color: #5899C1;\n}\n.arriba{\r\n    transform:rotateX(90deg) translateZ(150px);\r\n   /* background-color: aqua;*/\r\n    transform-style: preserve-3d;\n}\n.abajo{\r\n     transform:rotateX(-90deg) translateY(-50px) translateX(-45px)translateZ(50px);\r\n    background-color: limegreen;\r\n    width: 400px;\r\n    height: 500px;\r\n    transform-style: preserve-3d;\n}\n.abajo img{\r\n    transform:translateY(-50px) translateZ(-70px) rotateX(90deg);\r\n    height: 200px;\n}\n.techo{\r\n    height: 110%;\r\n    background-color: #111;\r\n    position: absolute;\n}\n:root{\r\n    --ancho:20em;\n}\n.t1{\r\n    transform-origin: right;\r\n    transform: rotateY(-37deg) translateX(-80px)translateZ(60px);\r\n    width:250px;\r\n    background-image: url('/public/images/techo.png');\r\n    background-color: #cccccc;\n}\n.t2{\r\n    transform-origin: ;\r\n    transform: rotateY(37deg) translateX(145px) translateZ(15px);\r\n    width:250px;   \r\n    background-color: #cccccc;\n}\n.ventanas-arriba{\r\n    width: 60%;\r\n    margin: auto;\r\n    /*border: 2px solid #111;*/\r\n    transform: translateY(50px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.ventanas-arriba .ventana{\r\n    float: left;\n}\n.ventanas-arriba .ventana:nth-child(2){\n}\n.ventanas-arriba2{\r\n    /* width: 60%; */\r\n    margin: auto;\r\n    /*border: 2px solid #111;*/\r\n    transform: translateY(50px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.ventanas-arriba2 .ventana-circular{\r\n    float: left;\n}\n.ventanas-arriba2 .ventana-circular:nth-child(2){\n}\n.box-puerta{\r\n    height: 100px;\r\n    margin: auto;\r\n    width: 70%;\r\n    transform: translateY(15px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.puerta{\r\n    height: 120px;\r\n    width: 80px;\r\n    border: 1px solid #fff;\r\n    /*transform: translateY(200px) translateX(50px);*/\r\n    background-color: #DD37CA;\r\n    display: flex;\r\n    /* justify-content: center;\r\n    flex-wrap: wrap; */\r\n    align-items: center;\r\n    box-shadow: inset 0 0 3px #CF9355\n}\n.puerta .cajas{\r\n    box-shadow: 0 0 3px #fff;\r\n    height: 17px;\r\n    width: 15px;\r\n    margin: 1px;\r\n    background-color: #CF9355;\n}\n.ventana-circular{\r\n    height:46px;\r\n    width: 46px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 50%;\n}\n.ventana-circular .lunas1{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 100% 0 0 0;\r\n    \r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas2{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 0 100% 0 0;\r\n    margin-left: 2px;\r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas3{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 0 0 0 100%;\r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas4{\r\n    border: 1px solid #fff;\r\n    height:19px;\r\n    width: 19px;\r\n    margin-left: 2px;\r\n    border-radius: 0 0 100% 0;\r\n    background-color: #76ACC6;\n}\n.ventana{\r\n    height: 70px;\r\n    width: 50px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 2px;\n}\n.ventana_frente{\r\n    height: 70px;\r\n    width: 70px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 2px;\n}\n.ventana_frente .lunas{\r\n    background-color: #76ACC6;\r\n    height: 32px;\r\n    width: 32px;\r\n    border: 1px solid #fff;\n}\n.ventana .lunas{\r\n    border: 1px solid #fff;\r\n    height: 22px;\r\n    width: 22px;\r\n    background-color: #76ACC6;\n}\n.derecha .ventana{ \r\ntransform: translateY(70px) translateX(180px);\r\n    float: left;\n}\n.derecha .ventana:nth-child(2){\r\n    margin-left: -11em;\n}\n.izquierdo .ventana{ \r\ntransform: translateY(70px) translateX(180px);\r\n    float: left;\n}\n.izquierdo .ventana:nth-child(2){\r\n    margin-left: -11em;\n}\n@-webkit-keyframes rotar{\n100%{\r\n        transform:rotateY(360deg)\n}\n}\n@keyframes rotar{\n100%{\r\n        transform:rotateY(360deg)\n}\n}\n.botones{\r\n    display: grid;\r\n    width: 300px;\r\n    grid-template-columns: 33% 33% 33%;\r\n    grid-template-rows: 33% 33% 33%;\n}\n.btn_big{\r\n    transition: all 1s ease-out;\n}\n.btn_big:hover{\r\n    transition: all 1s ease-out;\r\n    /* transform: rotate(360deg); */\r\n    transform:scale(1.1);\n}\n#close-CSS1 {\r\n    background-image: url( '/images/casa3d/izquierda.png' );\r\n    background-size: 100px 100px;\r\n    height: 100px;  \r\n    width: 100px;\n}\n#close-CSS2{\r\n    background-image: url( '/images/casa3d/derecha.png' );\r\n    background-size: 100px 100px;\r\n    height: 100px;  \r\n    width: 100px;\n}\r\n", ""]);
+exports.push([module.i, "\n.container_section_hause{\r\n    background: #e9b0df;\r\n    min-height: 600px;\n}\n.contenedor_casa{\r\n    height: 300px;\r\n    width: 300px;\r\n    perspective: 1000px;\r\n    /* transform-origin:2000px; */\r\n    /* margin: 100px -200px; */\r\n    margin: 0 0 60px 0;\r\n    transform: scale(.8);\n}\n.cont-hijo{\r\n    height: 100%;\r\n    width: 100%;\r\n    transform-style: preserve-3d;\r\n    transform: rotateY(90deg);\r\n    transition: 0.1s;\r\n      /* animation: rotar 30s infinite linear; */\n}\n.lado{\r\n    position: absolute;\r\n    height: 100%;\r\n    width: 100%;\n}\n.frente{\r\n    transform:rotateY(0deg) translateZ(150px);\r\n    -webkit-clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n            clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n    /* background-color: #5899C1; */\r\n    display: flex;\r\n    flex-direction: column;\n}\n.atras{\r\n    transform:rotateY(180deg) translateZ(150px);\r\n    -webkit-clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n            clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);\r\n    background-color: #5899C1;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\n}\n.atras h1{\r\n    font-family: sans-serif;\r\n    font-weight: bold;\r\n    font-size: 3em;\n}\n.derecha{\r\n    transform:rotateY(-90deg) translateY(115px) translateZ(150px);\r\n    height: 185px;\r\n    background-color: #5899C1;\r\n   /* display: flex;\r\n    justify-content: space-around;;*/\n}\n.izquierdo{\r\n    transform:rotateY(90deg) translateY(115px) translateZ(150px);\r\n     height: 185px;\r\n    background-color: #5899C1;\n}\n.arriba{\r\n    transform:rotateX(90deg) translateZ(150px);\r\n   /* background-color: aqua;*/\r\n    transform-style: preserve-3d;\n}\n.abajo{\r\n     transform:rotateX(-90deg) translateY(-50px) translateX(-45px)translateZ(50px);\r\n    background-color: limegreen;\r\n    width: 400px;\r\n    height: 500px;\r\n    transform-style: preserve-3d;\n}\n.abajo img{\r\n    transform:translateY(-50px) translateZ(-70px) rotateX(90deg);\r\n    height: 200px;\n}\n.techo{\r\n    height: 110%;\r\n    background-color: #111;\r\n    position: absolute;\n}\n:root{\r\n    --ancho:20em;\n}\n.t1{\r\n    transform-origin: right;\r\n    transform: rotateY(-37deg) translateX(-80px)translateZ(60px);\r\n    width:250px;\r\n    background-image: url('/public/images/techo.png');\r\n    background-color: #cccccc;\n}\n.t2{\r\n    transform-origin: ;\r\n    transform: rotateY(37deg) translateX(145px) translateZ(15px);\r\n    width:250px;   \r\n    background-color: #cccccc;\n}\n.ventanas-arriba{\r\n    width: 60%;\r\n    margin: auto;\r\n    /*border: 2px solid #111;*/\r\n    transform: translateY(50px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.ventanas-arriba .ventana{\r\n    float: left;\n}\n.ventanas-arriba .ventana:nth-child(2){\n}\n.ventanas-arriba2{\r\n    /* width: 60%; */\r\n    margin: auto;\r\n    /*border: 2px solid #111;*/\r\n    transform: translateY(50px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.ventanas-arriba2 .ventana-circular{\r\n    float: left;\n}\n.ventanas-arriba2 .ventana-circular:nth-child(2){\n}\n.box-puerta{\r\n    height: 100px;\r\n    margin: auto;\r\n    width: 70%;\r\n    transform: translateY(15px);\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.puerta{\r\n    height: 120px;\r\n    width: 80px;\r\n    border: 1px solid #fff;\r\n    /*transform: translateY(200px) translateX(50px);*/\r\n    background-color: #DD37CA;\r\n    display: flex;\r\n    /* justify-content: center;\r\n    flex-wrap: wrap; */\r\n    align-items: center;\r\n    box-shadow: inset 0 0 3px #CF9355\n}\n.puerta .cajas{\r\n    box-shadow: 0 0 3px #fff;\r\n    height: 17px;\r\n    width: 15px;\r\n    margin: 1px;\r\n    background-color: #CF9355;\n}\n.ventana-circular{\r\n    height:46px;\r\n    width: 46px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 50%;\n}\n.ventana-circular .lunas1{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 100% 0 0 0;\r\n    \r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas2{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 0 100% 0 0;\r\n    margin-left: 2px;\r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas3{\r\n    border: 1px solid #fff;\r\n    height: 19px;\r\n    width: 19px;\r\n    border-radius: 0 0 0 100%;\r\n    background-color: #76ACC6;\n}\n.ventana-circular .lunas4{\r\n    border: 1px solid #fff;\r\n    height:19px;\r\n    width: 19px;\r\n    margin-left: 2px;\r\n    border-radius: 0 0 100% 0;\r\n    background-color: #76ACC6;\n}\n.ventana{\r\n    height: 70px;\r\n    width: 50px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 2px;\n}\n.ventana_frente{\r\n    height: 70px;\r\n    width: 70px;\r\n    background-color:#DD37CA;\r\n   /* transform: translateY(105px) translateX(180px);*/\r\n    box-shadow: inset 0 0 7px #111;\r\n     display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    padding: 1px;\r\n    border-radius: 2px;\n}\n.ventana_frente .lunas{\r\n    background-color: #76ACC6;\r\n    height: 32px;\r\n    width: 32px;\r\n    border: 1px solid #fff;\n}\n.ventana .lunas{\r\n    border: 1px solid #fff;\r\n    height: 22px;\r\n    width: 22px;\r\n    background-color: #76ACC6;\n}\n.derecha .ventana{ \r\ntransform: translateY(70px) translateX(180px);\r\n    float: left;\n}\n.derecha .ventana:nth-child(2){\r\n    margin-left: -11em;\n}\n.izquierdo .ventana{ \r\ntransform: translateY(70px) translateX(180px);\r\n    float: left;\n}\n.izquierdo .ventana:nth-child(2){\r\n    margin-left: -11em;\n}\n@-webkit-keyframes rotar{\n100%{\r\n        transform:rotateY(360deg)\n}\n}\n@keyframes rotar{\n100%{\r\n        transform:rotateY(360deg)\n}\n}\n.botones{\r\n    display: grid;\r\n    width: 300px;\r\n    grid-template-columns: 33% 33% 33%;\r\n    grid-template-rows: 33% 33% 33%;\n}\n.btn_big{\r\n    transition: all 1s ease-out;\n}\n.btn_big:hover{\r\n    transition: all 1s ease-out;\r\n    /* transform: rotate(360deg); */\r\n    transform:scale(1.1);\n}\n#close-CSS1 {\r\n    background-image: url( '/images/casa3d/izquierda.png' );\r\n    background-size: 100px 100px;\r\n    height: 100px;  \r\n    width: 100px;\n}\n#close-CSS2{\r\n    background-image: url( '/images/casa3d/derecha.png' );\r\n    background-size: 100px 100px;\r\n    height: 100px;  \r\n    width: 100px;\n}\n.slider {\r\n  /* overwrite slider styles */\r\n  width: 200px;\n}\n.sec_tamaño_puerta{\r\n    display: flex;\r\n    flex-direction: row;\n}\n.sec_color_techo{\r\n    display: flex;\r\n    flex-direction: row;\n}\r\n", ""]);
 
 // exports
 
@@ -62005,7 +62061,10 @@ var render = function() {
                     _vm._v(" "),
                     _c(
                       "div",
-                      { staticClass: "puerta", style: _vm.color_puerta },
+                      {
+                        staticClass: "puerta",
+                        style: { width: _vm.ancho_puerta + "px" }
+                      },
                       [_c("div", { staticClass: "cajas" })]
                     )
                   ])
@@ -62052,7 +62111,17 @@ var render = function() {
                 ]
               ),
               _vm._v(" "),
-              _vm._m(6),
+              _c("div", { staticClass: "lado arriba" }, [
+                _c("div", {
+                  staticClass: "techo t1",
+                  style: { "background-color": _vm.color_techo }
+                }),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "techo t2",
+                  style: { "background-color": _vm.color_techo }
+                })
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "lado abajo" })
             ])
@@ -62119,7 +62188,9 @@ var render = function() {
                     "div",
                     { staticStyle: { "margin-top": "60px" } },
                     [
-                      _vm._v("\n                            Color Puerta: "),
+                      _vm._v(
+                        "\n                                Color Puerta: "
+                      ),
                       _c("v-input-colorpicker", {
                         model: {
                           value: _vm.color,
@@ -62127,6 +62198,46 @@ var render = function() {
                             _vm.color = $$v
                           },
                           expression: "color"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "sec_tamaño_puerta" },
+                    [
+                      _vm._v(
+                        "\n                                tamaño  Puerta:"
+                      ),
+                      _c("range-slider", {
+                        staticClass: "slider",
+                        attrs: { min: "60", max: "100", step: "5" },
+                        model: {
+                          value: _vm.ancho_puerta,
+                          callback: function($$v) {
+                            _vm.ancho_puerta = $$v
+                          },
+                          expression: "ancho_puerta"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "sec_color_techo" },
+                    [
+                      _vm._v("\n                                Color techo: "),
+                      _c("v-input-colorpicker", {
+                        model: {
+                          value: _vm.color_techo,
+                          callback: function($$v) {
+                            _vm.color_techo = $$v
+                          },
+                          expression: "color_techo"
                         }
                       })
                     ],
@@ -62242,16 +62353,6 @@ var staticRenderFns = [
       _c("div", { staticClass: "lunas" }),
       _vm._v(" "),
       _c("div", { staticClass: "lunas" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "lado arriba" }, [
-      _c("div", { staticClass: "techo t1" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "techo t2" })
     ])
   }
 ]
@@ -69035,6 +69136,352 @@ var src_0 = __webpack_require__("b635");
 /******/ });
 });
 //# sourceMappingURL=v-input-colorpicker.umd.js.map
+
+/***/ }),
+
+/***/ "./node_modules/vue-range-slider/dist/vue-range-slider.cjs.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-range-slider/dist/vue-range-slider.cjs.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*!
+ * vue-range-slider v0.6.0
+ * https://github.com/ktsn/vue-range-slider
+ *
+ * @license
+ * Copyright (c) 2016-2018 katashin
+ * Released under the MIT license
+ * https://github.com/ktsn/vue-range-slider/blob/master/LICENSE
+ */
+
+
+/* global window, document */
+
+var DocumentEventHelper = {
+  created: function created() {
+    if (typeof document === 'undefined') return;
+    forEachListener(this, function (key, listener) {
+      on(document, key, listener);
+    });
+  },
+  beforeDestroy: function beforeDestroy() {
+    if (typeof document === 'undefined') return;
+    forEachListener(this, function (key, listener) {
+      off(document, key, listener);
+    });
+  }
+};
+
+var isBrowser = typeof window !== 'undefined';
+
+var hasPassive = isBrowser && function () {
+  var supported = false;
+
+  try {
+    var desc = {
+      get: function get() {
+        supported = true;
+      }
+    };
+    var opts = Object.defineProperty({}, 'passive', desc);
+
+    window.addEventListener('test', null, opts);
+    window.removeEventListener('test', null, opts);
+  } catch (e) {
+    supported = false;
+  }
+
+  return supported;
+}();
+
+function forEachListener(vm, f) {
+  var events = vm.$options.events;
+  Object.keys(events).forEach(function (key) {
+    f(key, function (event) {
+      return events[key].call(vm, event);
+    });
+  });
+}
+
+function on(el, name, fn) {
+  var options = hasPassive ? { passive: false } : undefined;
+  el.addEventListener(name, fn, options);
+}
+
+function off(el, name, fn) {
+  var options = hasPassive ? { passive: false } : undefined;
+  el.removeEventListener(name, fn, options);
+}
+
+function relativeMouseOffset(offset, base) {
+  var bounds = base.getBoundingClientRect();
+  return {
+    left: offset.clientX - bounds.left,
+    top: offset.clientY - bounds.top
+  };
+}
+
+function round(value, min, max, step) {
+  if (value <= min) {
+    return min;
+  }
+
+  var roundedMax = Math.floor((max - min) / step) * step + min;
+  if (value >= roundedMax) {
+    return roundedMax;
+  }
+
+  var normalize = (value - min) / step;
+  var decimal = Math.floor(normalize);
+  var fraction = normalize - decimal;
+
+  if (fraction === 0) return value;
+
+  if (fraction < 0.5) {
+    return step * decimal + min;
+  } else {
+    return step * (decimal + 1) + min;
+  }
+}
+
+var DragHelper = {
+  mixins: [DocumentEventHelper],
+
+  props: {
+    disabled: Boolean
+  },
+
+  data: function data() {
+    return {
+      isDrag: false
+    };
+  },
+
+
+  events: {
+    mousedown: function mousedown(event) {
+      return this.dragStart(event, this.offsetByMouse);
+    },
+    mousemove: function mousemove(event) {
+      return this.dragMove(event, this.offsetByMouse);
+    },
+    mouseup: function mouseup(event) {
+      return this.dragEnd(event, this.offsetByMouse);
+    },
+    touchstart: function touchstart(event) {
+      return this.dragStart(event, this.offsetByTouch);
+    },
+    touchmove: function touchmove(event) {
+      return this.dragMove(event, this.offsetByTouch);
+    },
+    touchend: function touchend(event) {
+      return this.dragEnd(event, this.offsetByTouch);
+    },
+    touchcancel: function touchcancel(event) {
+      return this.dragEnd(event, this.offsetByTouch);
+    }
+  },
+
+  methods: {
+    isInTarget: function isInTarget(el) {
+      if (!el) return false;
+
+      if (el === this.$el) {
+        return true;
+      } else {
+        return this.isInTarget(el.parentElement);
+      }
+    },
+    offsetByMouse: function offsetByMouse(event) {
+      return relativeMouseOffset(event, this.$el);
+    },
+    offsetByTouch: function offsetByTouch(event) {
+      var touch = event.touches.length === 0 ? event.changedTouches[0] : event.touches[0];
+      return relativeMouseOffset(touch, this.$el);
+    },
+    dragStart: function dragStart(event, f) {
+      if (this.disabled || event.button !== undefined && event.button !== 0 || !this.isInTarget(event.target)) {
+        return;
+      }
+
+      event.preventDefault();
+      this.isDrag = true;
+      this.$emit('dragstart', event, f(event), this.$el);
+    },
+    dragMove: function dragMove(event, f) {
+      if (!this.isDrag) return;
+      event.preventDefault();
+      this.$emit('drag', event, f(event), this.$el);
+    },
+    dragEnd: function dragEnd(event, f) {
+      if (!this.isDrag) return;
+      event.preventDefault();
+      this.isDrag = false;
+      this.$emit('dragend', event, f(event), this.$el);
+    }
+  },
+
+  render: function render() {
+    return this.$slots.default && this.$slots.default[0];
+  }
+};
+
+var RangeSlider = { render: function render() {
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('span', { staticClass: "range-slider", class: { disabled: _vm.disabled } }, [_c('drag-helper', { attrs: { "disabled": _vm.disabled }, on: { "dragstart": _vm.dragStart, "drag": _vm.drag, "dragend": _vm.dragEnd } }, [_c('span', { ref: "inner", staticClass: "range-slider-inner" }, [_c('input', { staticClass: "range-slider-hidden", attrs: { "type": "text", "name": _vm.name, "disabled": _vm.disabled }, domProps: { "value": _vm.actualValue } }), _vm._v(" "), _c('span', { staticClass: "range-slider-rail" }), _vm._v(" "), _c('span', { staticClass: "range-slider-fill", style: { width: _vm.valuePercent + '%' } }), _vm._v(" "), _c('span', { ref: "knob", staticClass: "range-slider-knob", style: { left: _vm.valuePercent + '%' } }, [_vm._t("knob")], 2)])])], 1);
+  }, staticRenderFns: [],
+  props: {
+    name: String,
+    value: [String, Number],
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    min: {
+      type: [String, Number],
+      default: 0
+    },
+    max: {
+      type: [String, Number],
+      default: 100
+    },
+    step: {
+      type: [String, Number],
+      default: 1
+    }
+  },
+
+  data: function data() {
+    return {
+      actualValue: null,
+      dragStartValue: null
+    };
+  },
+  created: function created() {
+    var min = this._min,
+        max = this._max;
+
+    var defaultValue = Number(this.value);
+
+    if (this.value == null || isNaN(defaultValue)) {
+      if (min > max) {
+        defaultValue = min;
+      } else {
+        defaultValue = (min + max) / 2;
+      }
+    }
+
+    this.actualValue = this.round(defaultValue);
+  },
+
+
+  computed: {
+    _min: function _min() {
+      return Number(this.min);
+    },
+    _max: function _max() {
+      return Number(this.max);
+    },
+    _step: function _step() {
+      return Number(this.step);
+    },
+    valuePercent: function valuePercent() {
+      return (this.actualValue - this._min) / (this._max - this._min) * 100;
+    }
+  },
+
+  watch: {
+    value: function value(newValue) {
+      var value = Number(newValue);
+      if (newValue != null && !isNaN(value)) {
+        this.actualValue = this.round(value);
+      }
+    },
+    min: function min() {
+      this.actualValue = this.round(this.actualValue);
+    },
+    max: function max() {
+      this.actualValue = this.round(this.actualValue);
+    }
+  },
+
+  methods: {
+    dragStart: function dragStart(event, offset) {
+      this.dragStartValue = this.actualValue;
+      if (event.target === this.$refs.knob) {
+        return;
+      }
+      // If the click is out of knob, move it to mouse position
+      this.drag(event, offset);
+    },
+    drag: function drag(event, offset) {
+      var offsetWidth = this.$refs.inner.offsetWidth;
+
+      this.actualValue = this.round(this.valueFromBounds(offset.left, offsetWidth));
+      this.emitInput(this.actualValue);
+    },
+    dragEnd: function dragEnd(event, offset) {
+      var offsetWidth = this.$refs.inner.offsetWidth;
+
+      this.actualValue = this.round(this.valueFromBounds(offset.left, offsetWidth));
+
+      if (this.dragStartValue !== this.actualValue) {
+        this.emitChange(this.actualValue);
+      }
+    },
+    emitInput: function emitInput(value) {
+      this.$emit('input', value);
+    },
+    emitChange: function emitChange(value) {
+      this.$emit('change', value);
+    },
+    valueFromBounds: function valueFromBounds(point, width) {
+      return point / width * (this._max - this._min) + this._min;
+    },
+    round: function round$$1(value) {
+      return round(value, this._min, this._max, this._step);
+    }
+  },
+
+  components: {
+    DragHelper: DragHelper
+  }
+};
+
+module.exports = RangeSlider;
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-range-slider/dist/vue-range-slider.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/vue-range-slider/dist/vue-range-slider.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../css-loader??ref--6-1!../../postcss-loader/src??ref--6-2!./vue-range-slider.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-range-slider/dist/vue-range-slider.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 

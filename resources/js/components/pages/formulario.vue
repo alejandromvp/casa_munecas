@@ -288,6 +288,18 @@ transform: translateY(70px) translateX(180px);
     height: 100px;  
     width: 100px;
 }
+.slider {
+  /* overwrite slider styles */
+  width: 200px;
+}
+.sec_tamaño_puerta{
+    display: flex;
+    flex-direction: row;
+}
+.sec_color_techo{
+    display: flex;
+    flex-direction: row;
+}
 </style>
 <template>
     <div class="container_section_hause">
@@ -325,7 +337,7 @@ transform: translateY(70px) translateX(180px);
                                     <div class="lunas"></div>
                                     <div class="lunas"></div>
                                 </div>
-                                 <div class="puerta" :style="color_puerta">
+                                 <div class="puerta" v-bind:style="{ 'width': ancho_puerta+'px' }">
                                     <div class="cajas"></div>
                                     <!-- <div class="cajas"></div>
                                     <div class="cajas"></div>
@@ -375,8 +387,8 @@ transform: translateY(70px) translateX(180px);
                             <h1 style="color:pink;">Abi Shop</h1>
                         </div>
                         <div class="lado arriba">
-                            <div class="techo t1"></div>
-                            <div class="techo t2"></div>
+                            <div class="techo t1" v-bind:style="{ 'background-color': color_techo }"></div>
+                            <div class="techo t2" v-bind:style="{ 'background-color': color_techo }"></div>
                         </div>
                         <div class="lado abajo">
                             <!-- <img src="https://res.cloudinary.com/diz8ym76r/image/upload/v1598406385/imagenes/arbol2_ljzqdi.png" alt=""><img src="https://res.cloudinary.com/diz8ym76r/image/upload/v1598406385/imagenes/arbol2_ljzqdi.png" alt=""> -->
@@ -392,21 +404,33 @@ transform: translateY(70px) translateX(180px);
                             align-content: center;
                             margin: 0 0 30px 0;
                             flex-direction:column;">
-                            <div class="botones">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <!-- <input type="button" id="close-CSS1" v-on:click="movH_izq"> -->
-                                <input type="button" class="btn btn-primary" v-on:click="movH_izq" value="girar izquierda" style="padding:20px 40px 30px 20px;width:130px;">
-                                <div></div>
-                                <!-- <input type="button" id="close-CSS2" v-on:click="movH_right"> -->
-                                <input type="button" class="btn btn-primary" v-on:click="movH_right" value="girar derecha" style="padding:20px 40px 30px 20px;width:130px;">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div style="margin-top:60px;">
-                                Color Puerta: <v-input-colorpicker  v-model="color"/>
+                                <div class="botones">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <!-- <input type="button" id="close-CSS1" v-on:click="movH_izq"> -->
+                                    <input type="button" class="btn btn-primary" v-on:click="movH_izq" value="girar izquierda" style="padding:20px 40px 30px 20px;width:130px;">
+                                    <div></div>
+                                    <!-- <input type="button" id="close-CSS2" v-on:click="movH_right"> -->
+                                    <input type="button" class="btn btn-primary" v-on:click="movH_right" value="girar derecha" style="padding:20px 40px 30px 20px;width:130px;">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div style="margin-top:60px;">
+                                    Color Puerta: <v-input-colorpicker  v-model="color"/>
+                                </div>
+                                <div class="sec_tamaño_puerta">
+                                    tamaño  Puerta:<range-slider
+                                    class="slider"
+                                    min="60"
+                                    max="100"
+                                    step="5"
+                                    v-model="ancho_puerta">
+                                    </range-slider>
+                                </div>
+                                <div class="sec_color_techo">
+                                    Color techo: <v-input-colorpicker  v-model="color_techo"/>
                             </div>
                         </div>
                     </div>
@@ -417,9 +441,13 @@ transform: translateY(70px) translateX(180px);
 </template>
 
 <script>
+    import RangeSlider from 'vue-range-slider'
+    // you probably need to import built-in style
+    import 'vue-range-slider/dist/vue-range-slider.css'
     export default {
         data(){
             return{
+               sliderValue: 50,
                array_categorias: [],
                editmode:false,
                puerta :100,
@@ -428,9 +456,14 @@ transform: translateY(70px) translateX(180px);
                xcasa: 0,
                ycasa: 0,
                error_input_categoria: '',
-               color: "#DD37CA"
+               color: "#DD37CA",
+               color_techo: '#cccccc',
+               ancho_puerta: 80
             };
         },
+        components: {
+    RangeSlider
+  },
         computed: {
             x:{
                 get:function(){
