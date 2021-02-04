@@ -62064,7 +62064,10 @@ var render = function() {
                       "div",
                       {
                         staticClass: "puerta",
-                        style: { width: _vm.ancho_puerta + "px" }
+                        style: {
+                          width: _vm.ancho_puerta + "px",
+                          "background-color": _vm.color
+                        }
                       },
                       [_c("div", { staticClass: "cajas" })]
                     )

@@ -337,7 +337,7 @@ transform: translateY(70px) translateX(180px);
                                     <div class="lunas"></div>
                                     <div class="lunas"></div>
                                 </div>
-                                 <div class="puerta" v-bind:style="{ 'width': ancho_puerta+'px' }">
+                                 <div class="puerta" v-bind:style="{ 'width': ancho_puerta+'px', 'background-color': color }">
                                     <div class="cajas"></div>
                                     <!-- <div class="cajas"></div>
                                     <div class="cajas"></div>
